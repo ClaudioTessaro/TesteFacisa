@@ -13,7 +13,7 @@ import br.com.claudio.cesed.repository.CategoriaRepository;
 public class CategoriaService {
 
 	@Autowired
-	CategoriaRepository repo;
+	private CategoriaRepository repo;
 
 	public void insert(Categoria produto) {
 		repo.save(produto);

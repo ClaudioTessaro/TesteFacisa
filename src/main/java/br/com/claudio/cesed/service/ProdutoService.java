@@ -13,10 +13,10 @@ import br.com.claudio.cesed.repository.ProdutoRepository;
 public class ProdutoService {
 
 	@Autowired
-	ProdutoRepository repo;
+	private ProdutoRepository repo;
 	
 	@Autowired
-	CategoriaService categoriaService;
+	private CategoriaService categoriaService;
 
 	public void insert(CadastrarProdutoDTO objDto) {
 		Produto produto = fromDTO(objDto);
